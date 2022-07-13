@@ -1,0 +1,86 @@
+{
+    "hello": {
+        "en": "Hello",
+        "az": "Salam"
+    },
+    "welcome": {
+        "en": "Welcome to the BMI calculator bot.",
+        "az": "BMI Kalkulyator Botuna xoş gəlmisiniz."
+    },
+    "help": {
+        "en": "Please write /help to see the commands available.",
+        "az": "Mövcud əmrləri görmək üçün zəhmət olmasa /help yazın."
+    },
+    "enter": {
+        "en": "Please enter your height in centimeter and weight in kilograms.",
+        "az": "Zəhmət olmasa boyunuzu santimetr və çəkinizi kiloqramla daxil edin."
+    },
+    "example": {
+        "en": "Example:",
+        "az": "Məsələ:"
+    },
+    "height_error": {
+        "en": "Please enter a valid height.",
+        "az": "Zəhmət olmasa boyunuzu düzgün daxil edin."
+    },
+    "weight_error": {
+        "en": "Please enter a valid weight.",
+        "az": "Zəhmət olmasa çəkinizi düzgün daxil edin."
+    },
+    "lang": {
+        "en": "Please select a language:",
+        "az": "Zəhmət olmasa dilinizi seçin:"
+    },
+    "lang_changed": {
+        "en": "Language changed to English.",
+        "az": "Dil Azərbaycan dilinə dəyişdirildi."
+    },
+    "set_lang": {
+        "en": "To change the language.",
+        "az": "Dili dəyişmək üçün."
+    },
+    "bmi": {
+        "en": "Your BMI is",
+        "az": "Sizin BMI-niz:"
+    },
+    "calculate": {
+        "en": "To calculate the BMI.",
+        "az": "BMI-nizi hesablamaq üçün."
+    },
+    "healty_weight": {
+        "en": "For your height, a normal weight range would be from ",
+        "az": "Boyunuza görə normal çəki aralığınız"
+    },
+    "kg": {
+        "en": "kilograms",
+        "az": "kiloqram arasıdır"
+    },
+    "to": {
+        "en": " to ",
+        "az": " və "
+    },
+    "underweight": {
+        "en": "and you are underweight.",
+        "az": "və siz normadan az çəkilisiniz."
+    },
+    "overweight": {
+        "en": "and you are overweight.",
+        "az": "və siz artıq çəkilisiniz."
+    },
+    "normal": {
+        "en": "and you are normal.",
+        "az": "və siz normal çəkilisiniz."
+    },
+    "obese": {
+        "en": "and you are obese.",
+        "az": "və siz obezsiniz."
+    },
+    "about_bmi": {
+        "en": "About BMI",
+        "az": "BMI haqqında"
+    },
+    "info_about_bmi": {
+        "en": "Body Mass Index (BMI) is a person's weight in kilograms (or pounds) divided by the square of height in meters (or feet). A high BMI can indicate high body fatness. BMI screens for weight categories that may lead to health problems, but it does not diagnose the body fatness or health of an individual.",
+        "az": "Bədən Kütləsi İndeksi (BMI) bir insanın kiloqramla (və ya funt) çəkisinin metr (və ya fut) ilə hündürlüyün kvadratına bölünməsidir. Yüksək BMI yüksək bədən piylənməsini göstərə bilər. BMI sağlamlıq problemlərinə səbəb ola biləcək çəki kateqoriyalarını yoxlayır, lakin bu, bir insanın bədən piylənməsini və ya sağlamlığını diaqnoz etmir."
+    }
+}
