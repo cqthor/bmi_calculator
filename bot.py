@@ -1,5 +1,3 @@
-from codecs import utf_8_decode
-from gc import callbacks
 import sqlite3
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from typing import Union, List
