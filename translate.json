@@ -82,5 +82,17 @@
     "info_about_bmi": {
         "en": "Body Mass Index (BMI) is a person's weight in kilograms (or pounds) divided by the square of height in meters (or feet). A high BMI can indicate high body fatness. BMI screens for weight categories that may lead to health problems, but it does not diagnose the body fatness or health of an individual.",
         "az": "Bədən Kütləsi İndeksi (BMI) bir insanın kiloqramla (və ya funt) çəkisinin metr (və ya fut) ilə hündürlüyün kvadratına bölünməsidir. Yüksək BMI yüksək bədən piylənməsini göstərə bilər. BMI sağlamlıq problemlərinə səbəb ola biləcək çəki kateqoriyalarını yoxlayır, lakin bu, bir insanın bədən piylənməsini və ya sağlamlığını diaqnoz etmir."
+    },
+    "unknown_text": {
+        "en": "Sorry I can't recognize you , you said",
+        "az": "Üzr istəyirəm, sizi başa düşmədim, yazdığınız söz"
+    },
+    "unknown_command": {
+        "en": "is not a valid command",
+        "az": "düzgün əmri deyil"
+    },
+    "sorry": {
+        "en": "Sorry,",
+        "az": "Üzr istəyirəm,"
     }
 }

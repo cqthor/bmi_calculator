@@ -1,7 +1,10 @@
 import sqlite3
+from tokenize import String
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from typing import Union, List
 from telegram.ext.updater import Updater
+from telegram.ext.messagehandler import MessageHandler
+from telegram.ext.filters import Filters
 from telegram.update import Update
 from telegram.ext.callbackcontext import CallbackContext
 from telegram.ext.commandhandler import CommandHandler
@@ -129,7 +132,9 @@ def isfloat(num):
 
 
 def calculate_bmi(user_input, lang):
-    user_input = user_input.replace("/calculate@testbot12673_bot ", "")
+    user_input = user_input.lower()
+    print(user_input)
+    user_input = user_input.replace("/calculate@bmicalculatorbot ", "")
     user_input = user_input.replace("/calculate ", "")
 
     user_input = user_input.split()
@@ -166,6 +171,24 @@ def calculate_bmi(user_input, lang):
     else:
         return f"{data['enter'][lang]} {data['example'][lang]} /calculate 175 75"
 
+# unknown text
+
+
+def unknown_text(update: Update, context: CallbackContext):
+    lang = db.get_lang(update.message.chat_id)
+    if update.message.chat.type == "private":
+        update.message.reply_text(
+            f"{data['unknown_text'][lang]} - <i>{update.message.text}</i>", parse_mode="HTML")
+
+# unknown command
+
+
+def unknown(update: Update, context: CallbackContext):
+    lang = db.get_lang(update.message.chat_id)
+    if update.message.chat.type == "private":
+        update.message.reply_text(
+            f"{data['sorry'][lang]} <i>{update.message.text}</i> - {data['unknown_command'][lang]}", parse_mode="HTML")
+
 
 updater.dispatcher.add_handler(CommandHandler('start', start))
 updater.dispatcher.add_handler(CommandHandler('help', help))
@@ -173,4 +196,7 @@ updater.dispatcher.add_handler(CommandHandler('calculate', calculate))
 updater.dispatcher.add_handler(CommandHandler('set_lang', set_lang))
 updater.dispatcher.add_handler(CallbackQueryHandler(button))
 updater.dispatcher.add_handler(CommandHandler('about_bmi', about_bmi))
+
+updater.dispatcher.add_handler(MessageHandler(Filters.command, unknown))
+updater.dispatcher.add_handler(MessageHandler(Filters.text, unknown_text))
 updater.start_polling()
