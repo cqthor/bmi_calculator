@@ -1,5 +1,4 @@
 import sqlite3
-from tokenize import String
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from typing import Union, List
 from telegram.ext.updater import Updater
@@ -16,10 +15,8 @@ db = DBHelper()
 conn = sqlite3.connect('users.sqlite', check_same_thread=False)
 updater = Updater(config.token, use_context=True)
 
-f = open('translate.json', encoding='utf-8')
-data = json.load(f)
-
-# start command
+with open('translate.json', encoding='UTF-8') as f:
+    data = json.load(f)
 
 
 def start(update: Update, context: CallbackContext):
